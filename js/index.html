@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--
+        Avoids this message in IE 11's "Developer Tools" console:
+        The attached page targets document mode 7. Some console APIs and features may not be available.
+        and allows the page to display correctly.
+        -->
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel='stylesheet' href='substitute.css'>
+        <style>
+        </style>
+    </head>
+
+    <body>
+        <select id='selectSchool' onchange='onSchoolChange()'></select>
+        <p>
+        <table id='school' class='school'></table>
+
+		<script src="cookies.js"></script>
+		<script src="urlparams.js"></script>
+        <script src="substitute.js"></script>
+    </body>
+</html>

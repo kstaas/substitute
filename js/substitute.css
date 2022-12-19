@@ -1,0 +1,23 @@
+table.school {
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-family: "Tahoma", "helvetica";
+    font-size: 11pt;
+    color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+}
+
+td.label {
+    border: 1px solid black;
+    width: 80px;
+    text-align: left;
+}
+
+td.field {
+    border: 1px solid black;
+    width: 300px;
+    text-align: left;
+}
+
+<!-- a { text-decoration:none } //-->
+
