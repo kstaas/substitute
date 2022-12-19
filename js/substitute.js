@@ -9,9 +9,12 @@ function School(name, phone, address, principal, begin, end)
 }
 
 var schools = []
-schools.push(new School('Parkside Elementary', '',               '',                                        '', '0830', '1600'))
-schools.push(new School('LaMuth Middle',       '(440) 354-4394', '6700 Auburn Rd, Painesville, OH 44077',   '', '0740', '1510'))
-schools.push(new School('Riverside Campus',    '(440) 352-3341', '585 Riverside Dr, Painesville, OH 44077', '', '0710', '1440'))
+schools.push(new School('Buckeye Elementary',   '(440) 352-2191', '175 Buckeye Road, Painesville, OH 44077',      'Cassandre Smolen',    '0910', '1540'))
+schools.push(new School('Melridge Elementary',  '(440) 352-3854', '6689 Melridge Drive Concord Twp., OH 44077',   'Gretchen Wakim',      '0910', '1540'))
+schools.push(new School('Parkside Elementary',  '(440) 358-8750', '12428 Concord-Hambden Road Concord, OH 44077', 'Julie Weber',         '0910', '1540'))
+schools.push(new School('Riverview Elementary', '(440) 357-6171', '845 Madison Avenue Painesville, OH 44077',     'Traci Shantery',      '0910', '1540'))
+schools.push(new School('LaMuth Middle',        '(440) 354-4394', '6700 Auburn Rd, Painesville, OH 44077',        'Michael Lewis',       '0740', '1510'))
+schools.push(new School('Riverside Campus',     '(440) 352-3341', '585 Riverside Dr, Painesville, OH 44077',      'William A. Mayer Jr', '0710', '1440'))
 
 window.onload = function()
 {
