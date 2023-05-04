@@ -32,18 +32,13 @@ www_local_objs = $(patsubst %.html,$(www_local_path)/%.html,$(sources_html)) $(p
 # Targets
 local : $(www_local_path) $(www_local_objs)
 
-remote :
-	@../remote.sh $(repo_subdir)
-
 test :
-	ssh $(www_test_user)@$(www_test_site) "if [ ! -d $(www_test_root)/$(name) ]; then mkdir -p $(www_test_root)/$(name); fi"
-	scp $(sources) $(www_test_user)@$(www_test_site):$(www_test_root)/$(name)/
+	rsync -t $(sources) $(www_test_user)@$(www_test_site):$(www_test_root)/$(name)/
 
 prod :
-	ssh $(www_prod_user)@$(www_prod_site) "if [ ! -d $(www_prod_root)/$(name) ]; then mkdir -p $(www_prod_root)/$(name); fi"
-	scp $(sources) $(www_prod_user)@$(www_prod_site):$(www_prod_root)/$(name)/
+	rsync -t $(sources) $(www_prod_user)@$(www_prod_site):$(www_prod_root)/$(name)/
 
-all : local remote test prod
+all : local test prod
 
 # Rules
 $(www_local_path) :
