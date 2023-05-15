@@ -20,8 +20,8 @@ www_prod_site = staas.org
 www_prod_root = public_html
 
 www_test_user = karl
-www_test_site = diskstation
-www_test_root = /var/services/web
+www_test_site = oscar
+www_test_root = public_html
 
 www_local_user = $(USER)
 www_local_site = $(HOME)
