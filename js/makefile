@@ -20,7 +20,7 @@ www_prod_site = staas.org
 www_prod_root = public_html
 
 www_test_user = root
-www_test_site = 192.168.86.100
+www_test_site = test
 www_test_root = /var/www
 
 www_local_user = $(USER)
